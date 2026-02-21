@@ -1,0 +1,34 @@
+{
+  "news": [
+    {
+      "headline": "India Today: Latest News, Breaking News Today - Entertainment ...",
+      "url": "https://www.indiatoday.in/",
+      "news_summary": "Check out the latest news from India and around the world. Latest India news on Bollywood, Politics, Business, Cricket, Technology and Travel.",
+      "news_agency_name": "India Today"
+    },
+    {
+      "headline": "NDTV.com: Get Latest News, India News, Breaking News, Today's ...",
+      "url": "https://www.ndtv.com/",
+      "news_summary": "Videos · White House Confirms India Now Faces Temporary 10% Tariffs After Court Ruling · Four Youth Congress Leaders Produced Before Delhi Court Over AI Summit ...",
+      "news_agency_name": "NDTV"
+    },
+    {
+      "headline": "India Today - YouTube",
+      "url": "https://www.youtube.com/channel/UCYPvAwZP8pZhSMW8qs7cVCw",
+      "news_summary": "India Today LIVE TV 24X7 | Headlines | English News LIVE | Latest News · India Today TV Live: US Court Says Trump Tariffs Illegal | Trump Announces 10% Addl ...",
+      "news_agency_name": "India Today"
+    },
+    {
+      "headline": "India | Latest News & Updates - BBC",
+      "url": "https://www.bbc.com/news/world/asia/india",
+      "news_summary": "Mother and infant burnt to death in Indian state over witchcraft allegations. Eyewitnesses say a mob stormed the woman's home after rumours spread that she was ...",
+      "news_agency_name": "BBC"
+    },
+    {
+      "headline": "Latest News: Today's News Headlines, Breaking News India, World ...",
+      "url": "https://www.hindustantimes.com/",
+      "news_summary": "Top News · Ashwin fires back at Goswami as Usman Tariq faces fresh 'chucking' allegations · Naqvi denies pushing for India bilateral talks: 'Govt made boycott U ...",
+      "news_agency_name": "Hindustan Times"
+    }
+  ]
+}

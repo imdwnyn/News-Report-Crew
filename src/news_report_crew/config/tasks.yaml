@@ -1,0 +1,33 @@
+reporting_task:
+  description: >
+    # Tell agent what to do
+    Search latest news for {country} using the search tool ONCE.
+
+    After getting results:
+    - Extract top 5 headlines manually
+    - Do NOT call any other tools
+    - Do NOT invent tools
+    - Do NOT explain anything
+
+    Just return final JSON in required format.
+
+  expected_output: >
+    # Force strict JSON format
+    Return ONLY valid JSON in this exact format:
+
+    {
+      "news": [
+        {
+          "headline": "...",
+          "url": "...",
+          "news_summary": "...",
+          "news_agency_name": "..."
+        }
+      ]
+    }
+
+    No extra text.
+    No explanation.
+    Only JSON.
+
+  agent: news_reporter
