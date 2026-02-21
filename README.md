@@ -1,54 +1,145 @@
-# NewsReportCrew Crew
+# News Report Crew
 
-Welcome to the NewsReportCrew Crew project, powered by [crewAI](https://crewai.com). This template is designed to help you set up a multi-agent AI system with ease, leveraging the powerful and flexible framework provided by crewAI. Our goal is to enable your agents to collaborate effectively on complex tasks, maximizing their collective intelligence and capabilities.
+An AI-powered multi-agent system that researches a topic and generates a structured news-style report automatically.
+
+This project demonstrates how multiple AI agents can collaborate to produce clear, organized, and informative content. Each agent has a defined role, creating a workflow similar to a real newsroom.
+
+---
+
+## Overview
+
+News Report Crew takes a topic as input and produces a detailed news report by coordinating several specialized agents. Instead of one model doing everything, responsibilities are split across agents for better structure and clarity.
+
+### Agents in the system
+
+* Research Agent
+  Gathers background information and context about the topic
+
+* Analysis Agent
+  Extracts key facts, trends, and insights
+
+* Writer Agent
+  Produces a polished, readable final report
+
+---
+
+## Features
+
+* Multi-agent AI workflow
+* Automated research and summarization
+* Structured long-form report generation
+* Configurable agent roles and tasks
+* Modular design for easy expansion
+
+---
+
+## Project Structure
+
+```
+news_report_crew/
+│
+├── src/
+│   └── news_report_crew/
+│       ├── config/
+│       │   ├── agents.yaml
+│       │   └── tasks.yaml
+│       ├── crew.py
+│       └── main.py
+│
+├── .env
+├── requirements.txt
+└── README.md
+```
+
+---
 
 ## Installation
 
-Ensure you have Python >=3.10 <3.14 installed on your system. This project uses [UV](https://docs.astral.sh/uv/) for dependency management and package handling, offering a seamless setup and execution experience.
+Clone the repository:
 
-First, if you haven't already, install uv:
-
-```bash
-pip install uv
+```
+git clone https://github.com/yourusername/news_report_crew.git
+cd news_report_crew
 ```
 
-Next, navigate to your project directory and install the dependencies:
+Create a virtual environment:
 
-(Optional) Lock the dependencies and install them by using the CLI command:
-```bash
-crewai install
 ```
-### Customizing
-
-**Add your `OPENAI_API_KEY` into the `.env` file**
-
-- Modify `src/news_report_crew/config/agents.yaml` to define your agents
-- Modify `src/news_report_crew/config/tasks.yaml` to define your tasks
-- Modify `src/news_report_crew/crew.py` to add your own logic, tools and specific args
-- Modify `src/news_report_crew/main.py` to add custom inputs for your agents and tasks
-
-## Running the Project
-
-To kickstart your crew of AI agents and begin task execution, run this from the root folder of your project:
-
-```bash
-$ crewai run
+python -m venv venv
+venv\Scripts\activate
 ```
 
-This command initializes the news-report-crew Crew, assembling the agents and assigning them tasks as defined in your configuration.
+Install dependencies:
 
-This example, unmodified, will run the create a `report.md` file with the output of a research on LLMs in the root folder.
+```
+pip install -r requirements.txt
+```
 
-## Understanding Your Crew
+Create a `.env` file and add your API key:
 
-The news-report-crew Crew is composed of multiple AI agents, each with unique roles, goals, and tools. These agents collaborate on a series of tasks, defined in `config/tasks.yaml`, leveraging their collective skills to achieve complex objectives. The `config/agents.yaml` file outlines the capabilities and configurations of each agent in your crew.
+```
+OPENAI_API_KEY=your_key_here
+```
 
-## Support
+---
 
-For support, questions, or feedback regarding the NewsReportCrew Crew or crewAI.
-- Visit our [documentation](https://docs.crewai.com)
-- Reach out to us through our [GitHub repository](https://github.com/joaomdmoura/crewai)
-- [Join our Discord](https://discord.com/invite/X4JWnZnxPb)
-- [Chat with our docs](https://chatg.pt/DWjSBZn)
+## Usage
 
-Let's create wonders together with the power and simplicity of crewAI.
+Run the project:
+
+```
+python main.py
+```
+
+Enter a topic when prompted.
+The system will generate a structured news report based on that topic.
+
+---
+
+## Configuration
+
+You can customize the workflow by editing:
+
+* `agents.yaml` – defines agent roles and goals
+* `tasks.yaml` – defines the workflow
+* `crew.py` – core orchestration logic
+
+---
+
+## Example Use Cases
+
+* Automated news drafting
+* Research summaries
+* AI agent experimentation
+* Content generation workflows
+
+---
+
+## Tech Stack
+
+* Python
+* CrewAI
+* LangChain
+* OpenAI API
+
+---
+
+## Future Improvements
+
+* Web interface (Streamlit or FastAPI)
+* Source citation support
+* Real-time news retrieval
+* Export to PDF or DOCX
+* RAG-based fact retrieval
+
+---
+
+## Author
+
+Dwinayan
+
+---
+
+## License
+
+MIT
